@@ -1,0 +1,69 @@
+#login-page
+{
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    align-items: center;
+}
+
+#loginForm
+{
+    /* background-color: w; */
+    height:500px;
+    width: 60%;
+    align-items: center;
+    margin-top:50px;
+}
+
+.login-button {
+    cursor: pointer;
+    color: white;
+    padding:15px 20px;
+    outline: none;
+    font-size:18px;
+    font-weight: bold;
+    border:1px solid#4285f4;
+    background-color: #4285f4;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.login-content
+{
+
+    border:10px solid rgb(108, 11, 187);
+    border-radius: 20px;
+    width: 70%;
+    height: 60%;
+    padding:30px 40px;
+    margin:0 auto;
+}
+
+
+.content
+{
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 10px;
+}
+
+.login-content h2{
+    font-size:32px;
+    font-weight: 500;
+}
+.login-content h1{
+    /* margin-bottom:40px; */
+    font-size:40px;
+    letter-spacing:1.3rem;
+    font-family: 'Homemade Apple';
+}
+
+.image-div
+{
+    height:40%;
+    width:40%;
+    background-size: cover;
+    background:url('./../../imgs/istockphoto-1286081871-170667a.jpeg')
+}

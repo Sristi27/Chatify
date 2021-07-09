@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
+import Login from './components/login/Login';
+import {AuthProvider} from './contexts/AuthContext';
+import Chat from './components/chats/Chat';
+
 
 function App() {
+
+  const Routing = () =>
+  {
+     return (
+     <Router>
+       <AuthProvider>
+       <Switch>
+         <Route path="/" exact component={Login}/>
+         <Route path="/chats" component={Chat}/>
+       </Switch>
+       </AuthProvider>
+     </Router>
+     )
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routing/>
     </div>
   );
 }
